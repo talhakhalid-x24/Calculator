@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div class="exit">
+            <button class="exit-btn" onclick="exitCalc()">X</button>
+        </div>
+        <div>
+            <input id="result" type="text">
+        </div>       
+        <div>
+            <button class="btn sign-color" onclick="clearResult1()">CE</button>
+            <button class="btn sign-color" onclick="clearResult()">C</button>
+            <button class="btn sign-color" onclick="clearOne()">←</button>
+            <button class="btn sign-color" onclick="getNumber('/')">÷</button>
+            <button class="btn new-color" onclick="square('²')">x²</button>
+            <button class="btn new-color" onclick="sinFunc('Sin')">Sin</button>
+            <button class="btn new-color" onclick="expFunc('e')">e</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNumber('7')">7</button>
+            <button class="btn" onclick="getNumber('8')">8</button>
+            <button class="btn" onclick="getNumber('9')">9</button>
+            <button class="btn sign-color" onclick="getNumber('*')">x</button>
+            <button class="btn new-color" onclick="divByOne('')">1/x</button>
+            <button class="btn new-color" onclick="cosFunc('Cos')">Cos</button>
+            <button class="btn new-color" onclick="piFunc('3.142')">π</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNumber('4')">4</button>
+            <button class="btn" onclick="getNumber('5')">5</button>
+            <button class="btn" onclick="getNumber('6')">6</button>
+            <button class="btn sign-color" onclick="getNumber('-')">-</button>
+            <button class="btn new-color" onclick="sqRoot('√')">√x</button>
+            <button class="btn new-color" onclick="tanFunc('Tan')">Tan</button>
+            <button class="btn new-color" onclick="xModFunc('|x|')">|x|</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNumber('1')">1</button>
+            <button class="btn" onclick="getNumber('2')">2</button>
+            <button class="btn" onclick="getNumber('3')">3</button>
+            <button class="btn sign-color" onclick="getNumber('+')">+</button>
+            <button class="btn new-color" onclick="getNumber('%')">%</button>
+            <button class="btn new-color" onclick="logFunc('Log')">Log</button>
+            <button class="btn new-color" onclick="nFacFunc('n!')">n!</button>
+        </div>
+        <div>
+            <button class="btn sign-color" onclick="getNumber('.')">.</button>
+            <button class="btn" onclick="getNumber('0')">0</button>
+            <button class="half-btn" onclick="getResult()">=</button>
+            <button class="btn new-color" onclick="getNumber('(')">(</button>
+            <button class="btn new-color" onclick="getNumber(')')">)</button>
+            <button class="btn new-color" onclick="lnFunc('Ln')">Ln</button>
+        </div>
+    </div>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
